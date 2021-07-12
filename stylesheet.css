@@ -590,8 +590,8 @@ input, .stat-button
 
 }
 
-/* For devices that have a viewport of 1000px-1599px (Computers). */
-@media only screen and (min-width: 1000px) and (max-width: 1599px)
+/* For devices that have a viewport of 999px-1599px (Computers). */
+@media only screen and (min-width: 999px) and (max-width: 1599px)
 {
     body
     {
@@ -614,8 +614,22 @@ input, .stat-button
     }
 }
 
-/* If the screen size has a width of 1600px or higher (Zoomed out). */
-@media only screen and (min-width: 1600px)
+/* For devices that have a viewport height of over 1130px (iPad Pro for example). */
+@media only screen and (min-height: 1130px)
+{
+    body
+    {
+        background: #050a14;        
+        background-image: url(https://wallpaperaccess.com/full/2130.jpg);
+        background-size: 3000px;
+        background-attachment: fixed;
+        background-position: 40% 50%;
+        background-repeat: no-repeat;   
+    }
+}
+
+/* If the screen size has a width of 1599px or higher (Zoomed out). */
+@media only screen and (min-width: 1599px)
 {
     body
     {
@@ -630,19 +644,5 @@ input, .stat-button
         left: 0px;
         width: 100%;
         height: 100%;
-    }
-}
-
-/* For devices that have a viewport height of over 1130px (iPad Pro for example). */
-@media only screen and (min-height: 1130px)
-{
-    body
-    {
-        background: #050a14;        
-        background-image: url(https://wallpaperaccess.com/full/2130.jpg);
-        background-size: 3000px;
-        background-attachment: fixed;
-        background-position: 40% 50%;
-        background-repeat: no-repeat;   
     }
 }
