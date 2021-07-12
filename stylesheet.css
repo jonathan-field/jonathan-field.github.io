@@ -1,0 +1,643 @@
+/* I designed for mobile first so everything before the @media tags are for most mobile devices. */
+
+.loader 
+{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(225,225,225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img 
+{
+    width: 100px;
+}
+
+.loader.hidden 
+{
+    animation: fadeOut 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut 
+{
+    100% 
+    {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+body
+{
+    background-image: none;
+    background: linear-gradient(rgb(48,48,48), rgb(112,112,112));
+}
+
+/* The content of the entire page. */
+.content
+{
+    background: rgba(220, 220, 220, .9);
+    background-position: center;
+    background-image: none;
+    width: 80vw;
+    padding: 20px 20px;
+    margin: 20px auto;
+    font-family: EB Garamond, sans-serif;
+}
+
+.faded-hr
+{
+    margin: 25px 0;
+    height: 0px;
+    border-top: 1px solid black;
+    -o-border-image: linear-gradient(45deg, rgba(220, 220, 220, .01), black, rgba(220, 220, 220, .01)) 1;
+    border-image: linear-gradient(45deg, rgba(220, 220, 220, .01), black, rgba(220, 220, 220, .01)) 1;
+}
+
+#title
+{
+    text-align: center;
+}
+
+#intro-text
+{
+    font-size: 0.9em;
+}
+
+#stat-section
+{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#stat-section label
+{
+    float: left;
+    clear: left;
+    width: 200px;
+    text-align: left;
+}
+
+.str-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.str-section:hover
+{
+    background-color:rgb(224,224,224);
+    border-radius: 3px;
+}
+
+.dex-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.dex-section:hover
+{
+    background-color:rgb(224,224,224);
+    border-radius: 3px;
+}
+
+.int-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.int-section:hover
+{
+    background-color:rgb(224,224,224);
+    border-radius: 3px;
+}
+
+.fth-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.fth-section:hover
+{
+    background-color:rgb(224,224,224);
+    border-radius: 3px;
+}
+
+.end-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.end-section:hover
+{
+    background-color:rgb(224,224,224);
+    border-radius: 3px;
+}
+
+#FAP-section
+{
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.FAP-image
+{
+    width: 70px;
+    margin-bottom: 2px;
+}
+
+.FAP-text
+{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    margin: auto;
+    width: 185px;
+}
+
+/* To get rid of the standard checkbox html provides. */
+input[type="checkbox"] 
+{
+    display: none;
+}
+
+/* The following five functions are for the red stamp animation on the FAP ring. */
+#FAP-section label
+{
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+    width: 185px; 
+}
+
+label:before 
+{
+    content: " ";
+    position: absolute;
+    top: -87px;
+    left: -8px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+
+label img 
+{
+    width: 70px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+:checked + label:before 
+{
+    content: url(https://i.imgur.com/nABBRWb.png);
+    transition-duration: 0.2s;
+    transform-origin: 0 0;
+    transform: scale(0.4);
+    z-index: 1;
+}
+
+:checked + label img 
+{
+    transform: scale(1.2);
+    z-index: -1;
+}
+
+/* For making the built-in increment/decrement buttons invisisble. */
+input[type = "number"] 
+{
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type = number]::-webkit-inner-spin-button, input[type = number]::-webkit-outer-spin-button 
+{ 
+    -webkit-appearance: none;
+}
+
+/* Only stat input fields. Does not include FAP input field. */
+.stat
+{
+    width: 18px;
+    height: 14px;
+}
+
+/* All input fields. */
+input
+{
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1.5px solid gray;
+    box-shadow: inset 0 10px 10px -13px #000000;
+}
+
+input, .stat-button
+{
+    display: inline-block;
+    padding: 5px;
+}
+
+.stat-button
+{
+    border-radius: 5px;
+    height: 25px;
+    box-shadow: inset 0 10px 10px -16px #000000;
+    cursor: pointer;
+}
+
+.arrow 
+{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up 
+{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform-origin: 51% 51%;
+}
+
+.down 
+{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform-origin: 90% 32%;
+}
+
+#weapon-chart-section
+{
+    text-align: center;
+    align-items: center;
+}
+
+.notBold
+{
+    font-weight: normal;
+    line-height: 14px;
+    font-size: 9px;
+    margin: -10px;
+    padding: 2px;
+}
+
+.collapsible-content
+{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .4s;
+    position: relative;
+}
+
+.content-table
+{
+    border-collapse: collapse;
+    height: 40px;
+    border-spacing: 0;
+    margin: 7px 0;
+    font-size: .6em;
+    border-radius: 5px 5px 0 0;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.content-table img:first-child
+{
+    width: 40px;
+}
+
+.content-table thead th:last-child
+{
+    margin-right: 25px;
+}
+
+.content-table a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.content-table a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+.content-table thead tr
+{
+    background-color: dimGray;
+    color: #ffffff;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.content-table th, .content-table td
+{
+    text-align: center;
+    border: 1px solid #c6c9cc;
+}
+
+.content-table th
+{
+    padding: 4px;
+}
+
+.content-table td
+{
+    padding: 6px 15px;
+}
+
+.content-table tbody tr
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Select the image and figcaption box. */
+.content-table .imageBox
+{
+    font-size: 13.44px;
+    padding: 10px;
+    max-width: 100px;
+}
+
+/* Select all elements except the image/figcaption. */
+.content-table tbody td:nth-child(n + 2)
+{
+    font-size: 1.4em;
+    padding: 1px;
+}
+
+/* Select the 2H heavy swings data cell */
+.content-table .heavySwingBox
+{
+    font-size: 13.44px;
+    padding: 1px;
+}
+
+.content-table tbody tr:nth-of-type(4n + 1), .content-table tbody tr:nth-of-type(4n + 2)
+{
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:nth-of-type(4n + 3), .content-table tbody tr:nth-of-type(4n + 4)
+{
+    background-color: gainsboro;
+}
+
+.content-table tbody tr:last-of-type
+{
+    border-bottom: 2px solid dimGray;
+}
+
+.collapsible-button
+{
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #333333;
+    color: #ffffff;
+    text-align: left;
+    transition: .7s; 
+}
+
+/* For the little arrow to the right. */
+.collapsible-button::after 
+{
+    content: '\25be';
+    float: right;
+    transform: scale(1.5);
+}
+
+.collapsible-button-active 
+{
+    background: dimGray;
+}
+
+.collapsible-button-active::after 
+{
+    content: '\25b4';
+}
+
+/* For devices that have a viewport of 310px or lower (i.e. Galaxy Fold). */
+@media only screen and (max-width: 310px) 
+{
+    .content
+    {
+        margin: 10px auto;
+    }
+
+    .collapsible-content
+    {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .4s;
+        position: relative;
+        right: 6.5px;
+        width: fit-content;
+    }
+ 
+    .str-section
+    {
+        width: 210px;
+    }
+
+    .dex-section
+    {
+        width: 210px;
+    }
+
+    .int-section
+    {
+        width: 210px;
+    }
+
+    .fth-section
+    {
+        width: 210px;
+    }
+
+    .end-section
+    {
+        width: 210px;
+    }
+}
+
+/* iPhone5/SE */
+@media only screen and (device-aspect-ratio: 40/71)
+{
+    .str-section
+    {
+        width: 250px;
+    }
+
+    .dex-section
+    {
+        width: 250px;
+    }
+
+    .int-section
+    {
+        width: 250px;
+    }
+
+    .fth-section
+    {
+        width: 250px;
+    }
+
+    .end-section
+    {
+        width: 250px;
+    }
+}
+
+/* For devices that have a viewport of 768px-999px (Tablets). */
+@media only screen and (min-width: 768px) and (max-width: 999px)
+{
+    body
+    {
+        background: #050a14;
+        background-image: url(https://wallpaperaccess.com/full/2130.jpg);
+        background-size: 2000px;
+        background-attachment: fixed;
+        background-position: 40% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .content
+    {
+        background: rgba(220, 220, 220, .9);
+        background-position: center;
+        background-image: none;
+        width: 70vw;
+        padding: 20px 60px;
+        margin: 20px auto;
+    }
+    
+    #intro-text
+    {
+        font-size: 1em;
+    }
+
+    #dagger-straight-sword-section
+    {
+        display: flex;
+    }
+
+    #greatsword-ultra-greatsword-section
+    {
+        display: flex;
+    }
+    
+    .collapsible
+    {
+        margin: 0 10px;
+    }
+
+
+}
+
+/* For devices that have a viewport of 1000px-1599px (Computers). */
+@media only screen and (min-width: 1000px) and (max-width: 1599px)
+{
+    body
+    {
+        background: #050a14;        
+        background-image: url(https://wallpaperaccess.com/full/2130.jpg);
+        background-size: 2000px;
+        background-attachment: fixed;
+        background-position: 30% 50%;
+        background-repeat: no-repeat;   
+    }
+
+    .content
+    {
+        background: rgba(220, 220, 220, .9);
+        background-position: center;
+        background-image: none;
+        width: 70vw;
+        padding: 20px 60px;
+        margin: 20px auto;
+    }
+}
+
+/* If the screen size has a width of 1600px or higher (Zoomed out). */
+@media only screen and (min-width: 1600px)
+{
+    body
+    {
+        background: #050a14;
+        background-image: url(https://wallpaperaccess.com/full/2130.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 30% 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* For devices that have a viewport height of over 1130px (iPad Pro for example). */
+@media only screen and (min-height: 1130px)
+{
+    body
+    {
+        background: #050a14;        
+        background-image: url(https://wallpaperaccess.com/full/2130.jpg);
+        background-size: 3000px;
+        background-attachment: fixed;
+        background-position: 40% 50%;
+        background-repeat: no-repeat;   
+    }
+}
