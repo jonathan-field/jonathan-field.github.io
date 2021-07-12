@@ -66,6 +66,11 @@ body
     text-align: center;
 }
 
+h2
+{
+    text-align: center;
+}
+
 #intro-text
 {
     font-size: 0.9em;
