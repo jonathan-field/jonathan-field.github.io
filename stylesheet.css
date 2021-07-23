@@ -258,6 +258,7 @@ input, .stat-button
     height: 25px;
     box-shadow: inset 0 10px 10px -16px #000000;
     cursor: pointer;
+    touch-action: manipulation;
 }
 
 .arrow 
