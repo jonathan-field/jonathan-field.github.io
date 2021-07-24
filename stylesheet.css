@@ -22,7 +22,7 @@ body
 {
     margin: 25px 0;
     height: 0px;
-    border-top: 1px solid black;
+    border-top: 0.0625em solid black;
     -o-border-image: linear-gradient(45deg, rgba(220, 220, 220, .01), black, rgba(220, 220, 220, .01)) 1;
     border-image: linear-gradient(45deg, rgba(220, 220, 220, .01), black, rgba(220, 220, 220, .01)) 1;
 }
@@ -454,6 +454,8 @@ input, .stat-button
         transition: max-height .4s;
         position: relative;
         right: 6.5px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
  
