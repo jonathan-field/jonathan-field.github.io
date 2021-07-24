@@ -439,8 +439,8 @@ input, .stat-button
     content: '\25b4';
 }
 
-/* For devices that have a viewport of 310px or lower (i.e. Galaxy Fold). */
-@media only screen and (max-width: 310px) 
+/* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
+@media only screen and (max-width: 360px) 
 {
     .content
     {
