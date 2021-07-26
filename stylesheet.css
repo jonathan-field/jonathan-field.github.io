@@ -273,14 +273,12 @@ input, .stat-button
 {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-    transform-origin: 51% 51%;
 }
 
 .down 
 {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    transform-origin: 90% 32%;
 }
 
 #weapon-chart-section
@@ -617,7 +615,6 @@ input, .stat-button
         height: 100%;
     }
 }
-
 
 @media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5)
 {
