@@ -8,7 +8,7 @@
         <meta name = "description" content = "This is my Dark Souls website I am making">
         <meta name = "author" content = "Jonathan">
         <meta name = "keywords" content = "Dark Souls, Calculator, How many swings, Stamina">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>Dark Souls Stamina Swings</title>
     </head>
     <body>
@@ -40,25 +40,21 @@
                                 <button type = "button" class = "stat-button" onclick = "decreaseStr()"><i class="arrow down"></i></button>
                                 <button type = "button" class = "stat-button" onclick = "increaseStr()"><i class="arrow up"></i></button>
                             </div>
-                            
                             <div class = "dex-section">
                                 <label>Dexterity</label><input type = "text" class = "stat" min = 8 max = 99 value = 8 maxlength = 2 id = "dex" name = "dex" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"/>
                                 <button type = "button" class = "stat-button" onclick = "decreaseDex()"><i class="arrow down"></i></button>
                                 <button type = "button" class = "stat-button" onclick = "increaseDex()"><i class="arrow up"></i></button>
                             </div>
-
                             <div class = "int-section">
                                 <label>Intelligence</label><input type = "text" class = "stat" min = 8 max = 99 value = 8 maxlength = 2 id = "int" name = "int" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"/>
                                 <button type = "button" class = "stat-button" onclick = "decreaseInt()"><i class="arrow down"></i></button>
                                 <button type = "button" class = "stat-button" onclick = "increaseInt()"><i class="arrow up"></i></button>
                             </div>
-
                             <div class = "fth-section">
                                 <label>Faith</label><input type = "text" class = "stat" min = 8 max = 99 value = 8 maxlength = 2 id = "fth" name = "fth" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"/>
                                 <button type = "button" class = "stat-button" onclick = "decreaseFth()"><i class="arrow down"></i></button>
                                 <button type = "button" class = "stat-button" onclick = "increaseFth()"><i class="arrow up"></i></button>
                             </div>
-
                             <div class = "end-section">
                                 <label>Endurance</label><input type = "text" class = "stat" min = 8 max = 99 value = 8 maxlength = 2 id = "end" name = "end" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"/>
                                 <button type = "button" class = "stat-button" onclick = "decreaseEnd()"><i class="arrow down"></i></button>
