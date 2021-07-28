@@ -1,5 +1,10 @@
 /* I designed for mobile first so everything before the @media tags are for most mobile devices. */
 
+html
+{
+    padding: env(safe-area-inset)
+}
+
 body
 {
     background-image: none;
