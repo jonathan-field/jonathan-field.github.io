@@ -2,7 +2,7 @@
 
 html
 {
-    padding: env(safe-area-inset)
+    padding: env(safe-area-inset);
 }
 
 body
