@@ -274,6 +274,7 @@ input, .stat-button
     box-shadow: inset 0 10px 10px -16px #000000;
     cursor: pointer;
     touch-action: manipulation;
+    -webkit-appearance: none;
 }
 
 .arrow 
