@@ -369,8 +369,6 @@ function decreaseEnd()
 
 // End of increase/decrease section.
 
-
-
 document.addEventListener("DOMContentLoaded", function(event) 
 { 
     // Initialize all weapons and their stats on web page load only once.
