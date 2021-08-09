@@ -443,7 +443,6 @@ input, .stat-button
 {
     content: '\25be';
     float: right;
-    transform: scale(1.5);
 }
 
 .collapsible-button-active 
