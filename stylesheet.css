@@ -434,6 +434,8 @@ input, .stat-button
     background: #333333;
     color: #ffffff;
     text-align: left;
+    vertical-align: middle;
+    line-height: 17px;
     transition: .7s; 
     touch-action: manipulation;
 }
@@ -441,7 +443,9 @@ input, .stat-button
 /* For the little arrow to the right. */
 .collapsible-button::after 
 {
+    font-family: Segoe UI Emoji, Segoe UI Symbol, Symbola, Quivira;
     content: '\25be';
+    font-size: 16px;
     float: right;
 }
 
