@@ -435,6 +435,7 @@ input, .stat-button
     color: #ffffff;
     text-align: left;
     transition: .7s; 
+    touch-action: manipulation;
 }
 
 /* For the little arrow to the right. */
