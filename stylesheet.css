@@ -454,7 +454,6 @@ input, .stat-button
 .collapsible-button-active::after 
 {
     content: '\25b4';
-    transform: scale(1.5);
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
