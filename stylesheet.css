@@ -443,13 +443,9 @@ input, .stat-button
 }
 
 /* For the little arrow to the right. */
-.collapsible-button .arrow
+.collapsible-button::after
 {
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    padding: 3px;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
+    content: '\002B';
     float: right;
 }
 
@@ -460,12 +456,8 @@ input, .stat-button
 
 .collapsible-button-active::after 
 {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform-origin: 90% 36%;
+    content: '\2212';
+    float: right;
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
