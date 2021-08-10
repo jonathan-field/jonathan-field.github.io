@@ -444,7 +444,7 @@ input, .stat-button
 .collapsible-button::after 
 {
     font-family: Segoe UI Emoji, Segoe UI Symbol, Symbola, Quivira;
-    content: '\25be';
+    content: '\25b4';
     font-size: 16px;
     float: right;
 }
