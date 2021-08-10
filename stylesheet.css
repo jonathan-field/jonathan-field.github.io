@@ -275,6 +275,8 @@ input, .stat-button
     cursor: pointer;
     touch-action: manipulation;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .arrow 
