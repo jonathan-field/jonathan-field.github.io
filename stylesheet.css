@@ -403,13 +403,20 @@ input, .stat-button
     padding: 1px;
 }
 
-/* Select the 2H heavy swings data cell */
-.heavySwingBox
+/* Select the heavy swings data cell */
+.content-table .lightSwingBox
+{
+    height: 50%;
+    background-color: lightblue;
+}
+
+/* Select the heavy swings data cell */
+.content-table .heavySwingBox
 {
     font-size: 13.44px;
     padding: 1px;
-    height: 0.1px;
-    background-color:red;
+    height: 50%;
+    background-color: lightcoral;
 }
 
 .content-table tbody tr:nth-of-type(4n + 1), .content-table tbody tr:nth-of-type(4n + 2)
