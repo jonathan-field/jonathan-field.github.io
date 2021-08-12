@@ -408,7 +408,7 @@ input, .stat-button
 {
     font-size: 13.44px;
     padding: 1px;
-    height: 50%;
+    height: 1px;
 }
 
 .content-table tbody tr:nth-of-type(4n + 1), .content-table tbody tr:nth-of-type(4n + 2)
