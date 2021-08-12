@@ -396,7 +396,7 @@ input, .stat-button
     max-width: 100px;
 }
 
-/* Select all elements except the image/figcaption. */
+/* Select all elements except the image/figcaption and heavy attacks box. */
 .content-table tbody td:nth-child(n + 2)
 {
     font-size: 1.4em;
@@ -420,9 +420,15 @@ input, .stat-button
     background-color: gainsboro;
 }
 
-.content-table tbody tr:last-of-type
+.content-table tbody
 {
     border-bottom: 2px solid dimGray;
+}
+
+/* Select the last 1H light attack box */
+.content-table tbody tr:nth-last-child(2) td:last-of-type 
+{
+    border-bottom: none;
 }
 
 .collapsible-button
