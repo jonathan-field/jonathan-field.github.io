@@ -23,6 +23,8 @@ html
     width: 20px;
     height: 20px;
     background-color: #F8F8F8;
+    box-shadow: 0px 0px 0px 3px #cfcfcf;
+    ;
 }
 
 .top-link.show {
