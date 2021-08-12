@@ -425,7 +425,11 @@ input, .stat-button
     border-bottom: 2px solid dimGray;
 }
 
-
+/* Select the last 1H light attack box */
+.content-table tbody tr:nth-last-child(2) td:last-of-type 
+{
+    border-bottom: none;
+}
 
 .collapsible-button
 {
