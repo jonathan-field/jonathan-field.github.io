@@ -389,7 +389,7 @@ input, .stat-button
 }
 
 /* Select the image and figcaption box. */
-.content-table .imageBox
+.imageBox
 {
     font-size: 13.44px;
     padding: 10px;
@@ -404,11 +404,12 @@ input, .stat-button
 }
 
 /* Select the 2H heavy swings data cell */
-.content-table .heavySwingBox
+.heavySwingBox
 {
     font-size: 13.44px;
     padding: 1px;
-    height: 1px;
+    height: 0.1px;
+    background-color:red;
 }
 
 .content-table tbody tr:nth-of-type(4n + 1), .content-table tbody tr:nth-of-type(4n + 2)
