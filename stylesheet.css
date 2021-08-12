@@ -403,22 +403,6 @@ input, .stat-button
     padding: 1px;
 }
 
-/* Select the heavy swings data cell */
-.content-table .lightSwingBox
-{
-    height: 50%;
-    background-color: lightblue;
-}
-
-/* Select the heavy swings data cell */
-.content-table .heavySwingBox
-{
-    font-size: 13.44px;
-    padding: 1px;
-    height: 50%;
-    background-color: lightcoral;
-}
-
 .content-table tbody tr:nth-of-type(4n + 1), .content-table tbody tr:nth-of-type(4n + 2)
 {
     background-color: #f3f3f3;
@@ -473,6 +457,29 @@ input, .stat-button
 {
     content: '\2212';
     float: right;
+}
+
+/* Select the heavy swings data cell */
+.content-table .lightSwingBox
+{
+    height: 50%;
+    background-color: lightblue;
+}
+
+/* Select the heavy swings data cell */
+.content-table .heavySwingBox
+{
+    font-size: 13.44px;
+    padding: 1px;
+    height: 50%;
+}
+
+.content-table tbody tr:last-of-type
+{
+    height: 50%;
+    padding: 1px;
+    background-color: lightgreen;
+
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
