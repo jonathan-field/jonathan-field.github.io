@@ -550,7 +550,7 @@ input, .stat-button
 /* Select the heavy swings data cell */
 .content-table .lightSwingBox
 {
-    height: 50%;
+    min-height: 50%;
     background-color: lightblue;
 }
 
@@ -559,7 +559,7 @@ input, .stat-button
 {
     font-size: 13.44px;
     padding: 1px;
-    height: 50%;
+    min-height: 50%;
     background-color: lightpink;
 }
 
