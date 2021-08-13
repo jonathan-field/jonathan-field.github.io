@@ -467,10 +467,6 @@ input, .stat-button
     padding: 4px;
 }
 
-.content-table td
-{
-}
-
 .content-table tbody tr
 {
     border-bottom: 1px solid #dddddd;
@@ -550,8 +546,7 @@ input, .stat-button
 /* Select the heavy swings data cell */
 .content-table .lightSwingBox
 {
-    height: 50px;
-    background-color: lightblue;
+    height: 45px;
 }
 
 /* Select the heavy swings data cell */
@@ -559,8 +554,7 @@ input, .stat-button
 {
     font-size: 13.44px;
     padding: 1px;
-    height: 50px;
-    background-color: lightgoldenrodyellow;
+    height: 45px;
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
