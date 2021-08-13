@@ -67,7 +67,7 @@ const reactToSafariOverflowBar = (element, offsetBottom) => {
         }
 };
 
-const offsetBottom = 20;
+const offsetBottom = 100;
 const stuckToBottom = document.querySelector('.is-stuckToBottom');
  
 /**
