@@ -468,7 +468,6 @@ input, .stat-button
 
 .content-table td
 {
-    padding: 6px 15px;
 }
 
 .content-table tbody tr
@@ -560,7 +559,7 @@ input, .stat-button
     font-size: 13.44px;
     padding: 1px;
     min-height: 50%;
-    background-color: lightpink;
+    background-color: lightgoldenrodyellow;
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
