@@ -25,6 +25,11 @@ html
     background-color: #F8F8F8;
     box-shadow: 0px 0px 0px 3px #cfcfcf;
     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .top-link.show {
@@ -546,7 +551,8 @@ input, .stat-button
 /* Select the heavy swings data cell */
 .content-table .lightSwingBox
 {
-    height: 45px;
+    min-height: 45px;
+    max-height: 54px;
 }
 
 /* Select the heavy swings data cell */
@@ -554,7 +560,8 @@ input, .stat-button
 {
     font-size: 13.44px;
     padding: 1px;
-    height: 45px;
+    min-height: 45px;
+    max-height: 54px;
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
