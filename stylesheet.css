@@ -553,6 +553,7 @@ input, .stat-button
 {
     background-color: lightblue;
     height: auto;
+    object-fit: contain;
 }
 
 /* Select the heavy swings data cell */
@@ -561,6 +562,8 @@ input, .stat-button
     font-size: 13.44px;
     padding: 1px;
     height: auto;
+    object-fit: contain;
+
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
