@@ -551,9 +551,7 @@ input, .stat-button
 /* Select the light swings data cell */
 .content-table .lightSwingBox
 {
-    background-color: lightblue;
-    height: auto;
-    object-fit: contain;
+    height: 53.63px;
 }
 
 /* Select the heavy swings data cell */
@@ -561,9 +559,7 @@ input, .stat-button
 {
     font-size: 13.44px;
     padding: 1px;
-    height: auto;
-    object-fit: contain;
-
+    height: 53.63px;
 }
 
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
