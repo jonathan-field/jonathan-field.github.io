@@ -433,8 +433,6 @@ input, .stat-button
     max-height: 0;
     transition: max-height .4s;
     position: relative;
-    width: 295px;
-    margin: 5px 4px;
 }
 
 .content-table
@@ -717,6 +715,12 @@ input, .stat-button
     h2
     {
         font-size: 1.5em;
+    }
+
+    .collapsible-content
+    {
+        width: 295px;
+        margin: 5px 4px;
     }
 
     #stat-and-equipment-wrapper
