@@ -687,6 +687,43 @@ input, .stat-button
     {
         margin: 0 10px;
     }
+
+    .collapsible-content
+    {
+        width: 295px;
+        margin: 5px 4px;
+    }
+
+    #stat-and-equipment-wrapper
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #stat-section
+    {
+        flex-grow: 1;
+    }
+
+    #equipment-section
+    {
+        flex-grow: 1;
+    }
+
+    #FAP-section
+    {
+        margin: 50px 0;
+    }
+
+    #weapon-chart-wrapper
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:unset;
+    }
 }
 
 /* For devices that have a viewport of 999px-1599px (Computers). */
