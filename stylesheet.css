@@ -129,7 +129,7 @@ body
     -webkit-tap-highlight-color: transparent;
 }
 
-.unselectable 
+.unselectable-wrapper
 {
     -moz-user-select: -moz-none;
     -webkit-user-select: none;
@@ -152,7 +152,7 @@ h2
     font-size: 0.9em;
 }
 
-#stat-section
+.unselectable-wrapper
 {
     text-align: center;
     font-size: 1.1em;
@@ -433,6 +433,8 @@ input, .stat-button
     max-height: 0;
     transition: max-height .4s;
     position: relative;
+    width: 295px;
+    margin: 5px 4px;
 }
 
 .content-table
@@ -683,22 +685,10 @@ input, .stat-button
         font-size: 1em;
     }
 
-    #dagger-straight-sword-section
-    {
-        display: flex;
-    }
-
-    #greatsword-ultra-greatsword-section
-    {
-        display: flex;
-    }
-    
     .collapsible
     {
         margin: 0 10px;
     }
-
-
 }
 
 /* For devices that have a viewport of 999px-1599px (Computers). */
@@ -722,6 +712,42 @@ input, .stat-button
         width: 70vw;
         padding: 20px 60px;
         margin: 20px auto;
+    }
+
+    h2
+    {
+        font-size: 1.5em;
+    }
+
+    #stat-and-equipment-wrapper
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #stat-section
+    {
+        flex-grow: 1;
+    }
+
+    #equipment-section
+    {
+        flex-grow: 1;
+    }
+
+    #FAP-section
+    {
+        margin: 50px 0;
+    }
+
+    #weapon-chart-wrapper
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:unset;
     }
 }
 
