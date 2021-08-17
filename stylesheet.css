@@ -672,12 +672,13 @@ input, .stat-button
         top: 0;
         left: 0;
         pointer-events: none;
+        transition: height 999999s;
     }
 
     .content
     {
         position: relative;
-        background: rgba(220, 220, 20, .9);
+        background: rgba(20, 220, 220, .9);
         background-position: center;
         background-image: none;
         width: 70vw;
