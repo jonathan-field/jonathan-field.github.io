@@ -677,13 +677,13 @@ input, .stat-button
          background-image: url(https://wallpaperaccess.com/full/2130.jpg);
          background-position: 40% 50%;
          background-repeat: no-repeat;
-         background-size: cover;
+         background-size: 2000px;
      }
 
     .content
     {
         position: relative;
-        background: rgba(20, 220, 220, .9);
+        background: rgba(220, 120, 220, .9);
         background-position: center;
         background-image: none;
         width: 70vw;
