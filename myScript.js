@@ -443,6 +443,15 @@ document.addEventListener("DOMContentLoaded", function(event)
         });
 });
 
+var bg = $("#frontlashID");
+
+function resizeBackground() {
+    bg.height($(window).height() + 60);
+}
+
+$(window).resize(resizeBackground);
+resizeBackground();
+
 // Creating objects for every weapon to be used for updateRequirement.
 function allWeapons()
 {

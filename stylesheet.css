@@ -679,12 +679,13 @@ input, .stat-button
          background-position: 40% 50%;
          background-repeat: no-repeat;
          background-size: 2000px;
+         transition: height 999999s;
      }
 
     .content
     {
         position: relative;
-        background: rgba(220, 120, 220, .9);
+        background: rgba(220, 220, 20, .9);
         background-position: center;
         background-image: none;
         width: 70vw;
