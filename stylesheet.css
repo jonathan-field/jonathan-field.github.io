@@ -682,6 +682,16 @@ input, .stat-button
          transition: height 999999s;
      }
 
+     .parallax-section
+     {
+        transition: height 999999s;
+     }
+
+     .parallax-child-section
+     {
+        transition: height 999999s;
+     }
+
     .content
     {
         position: relative;
