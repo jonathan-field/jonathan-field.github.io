@@ -584,17 +584,6 @@ input, .stat-button
     height: 53.63px;
 }
 
-.footer 
-{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
- }
-
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
 @media only screen and (max-width: 360px) 
 {
@@ -673,15 +662,16 @@ input, .stat-button
 /* For devices that have a viewport of 768px-999px (Tablets). */
 @media only screen and (min-width: 768px) and (max-width: 999px)
 {
-    body
+    #background
     {
-        background: #050a14;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
         background-image: url(https://wallpaperaccess.com/full/2130.jpg);
-        background-size: 2000px;
-        background-attachment: fixed;
-        height: auto;
-        background-position: 40% 50%;
-        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
     }
 
     .content
