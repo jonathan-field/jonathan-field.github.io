@@ -679,7 +679,7 @@ input, .stat-button
     .content
     {
         position: relative;
-        background: rgba(120, 220, 220, .9);
+        background: rgba(220, 220, 220, .9);
         background-position: center;
         background-image: none;
         width: 70vw;
@@ -810,7 +810,7 @@ input, .stat-button
 
     .content
     {
-        background: rgba(220, 120, 220, .9);
+        background: rgba(220, 220, 220, .9);
         background-position: center;
         background-image: none;
         width: 70vw;
