@@ -737,7 +737,7 @@ input, .stat-button
 }
 
 /* For mobile devices that have a viewport of 1024px-1400px (Tablets in landscape). */
-@media only screen and (min-width: 1024px) and (max-width: 1400px) and (hover:none) and (hover:on-demand)
+@media only screen and (min-width: 1024px) and (max-width: 1400px) and (pointer:coarse)
 {
     body
     {
