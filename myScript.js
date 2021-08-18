@@ -443,6 +443,24 @@ document.addEventListener("DOMContentLoaded", function(event)
         });
 });
 
+document.addEventListener('keydown', function (event) {
+    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
+        var form = event.target.form;
+        var index = Array.prototype.indexOf.call(form, event.target);
+        form.elements[index + 3].focus();
+        event.preventDefault();
+    }
+});
+
+document.getElementById("end").addEventListener('keydown', function (event) {
+    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
+        var form = event.target.form;
+        var index = Array.prototype.indexOf.call(form, event.target);
+        document.getElementById("end").blur();
+        event.preventDefault();
+    }
+  });
+
 // Creating objects for every weapon to be used for updateRequirement.
 function allWeapons()
 {
