@@ -587,6 +587,38 @@ input, .stat-button
     cursor: pointer;
 }
 
+#github-text-container
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#github-text
+{
+    color: rgb(70, 70, 70);
+    display: flex;
+}
+
+#github-text-container a:hover
+{
+    color: rgb(117, 117, 117);
+    text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+
+#github-text-container img
+{
+    height: 18px;
+    padding: 0 5px;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+
 /* For devices that have a viewport of 360px or lower (i.e. Galaxy Fold). */
 @media only screen and (max-width: 360px) 
 {
