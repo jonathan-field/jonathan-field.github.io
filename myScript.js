@@ -38,6 +38,57 @@ scrollToTopButton.onclick = function(e)
   scrollToTop();
 }
 
+// Allows user to use tabs and the enter key to move to the next input field.
+document.getElementById("str").addEventListener('keydown', function (event) {
+    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
+        var form = event.target.form;
+        var index = Array.prototype.indexOf.call(form, event.target);
+        form.elements[index + 3].focus();
+        event.preventDefault();
+    }
+
+});
+
+document.getElementById("dex").addEventListener('keydown', function (event) {
+    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
+        var form = event.target.form;
+        var index = Array.prototype.indexOf.call(form, event.target);
+        form.elements[index + 3].focus();
+        event.preventDefault();
+    }
+
+});
+
+document.getElementById("int").addEventListener('keydown', function (event) {
+    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
+        var form = event.target.form;
+        var index = Array.prototype.indexOf.call(form, event.target);
+        form.elements[index + 3].focus();
+        event.preventDefault();
+    }
+
+});
+
+document.getElementById("fth").addEventListener('keydown', function (event) {
+    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
+        var form = event.target.form;
+        var index = Array.prototype.indexOf.call(form, event.target);
+        form.elements[index + 3].focus();
+        event.preventDefault();
+    }
+
+});
+
+// When the user is on the endurance input field, a tab or enter key will exit the input field.
+document.getElementById("end").addEventListener('keydown', function (event) {
+    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
+        var form = event.target.form;
+        var index = Array.prototype.indexOf.call(form, event.target);
+        document.getElementById("end").blur();
+        event.preventDefault();
+    }
+});
+
 function updateRequirement(weapons) 
 {
     // An object that holds the current stats inputted.
@@ -442,24 +493,6 @@ document.addEventListener("DOMContentLoaded", function(event)
             });
         });
 });
-
-document.addEventListener('keydown', function (event) {
-    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
-        var form = event.target.form;
-        var index = Array.prototype.indexOf.call(form, event.target);
-        form.elements[index + 3].focus();
-        event.preventDefault();
-    }
-});
-
-document.getElementById("end").addEventListener('keydown', function (event) {
-    if ((event.keyCode === 13 || event.keyCode === 9) && event.target.nodeName === 'INPUT') {
-        var form = event.target.form;
-        var index = Array.prototype.indexOf.call(form, event.target);
-        document.getElementById("end").blur();
-        event.preventDefault();
-    }
-  });
 
 // Creating objects for every weapon to be used for updateRequirement.
 function allWeapons()

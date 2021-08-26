@@ -10,7 +10,7 @@ html
     transition: all .25s ease-in-out;
     position: fixed;
     bottom: 0;
-    right: 0;
+    right: 3.8%;
     display: inline-flex;
     z-index: 100000;
     
@@ -490,11 +490,6 @@ input, .stat-button
     padding: 4px;
 }
 
-.content-table td
-{
-    color: rgb(243, 82, 82);
-}
-
 .content-table tbody tr
 {
     border-bottom: 1px solid #dddddd;
@@ -588,6 +583,7 @@ input, .stat-button
 #other-games-section label img 
 {
     width: 45%;
+    max-width: 342px;
     cursor: pointer;
 }
 
@@ -818,6 +814,11 @@ input, .stat-button
         margin: 20px auto;
     }
 
+    .top-link 
+    {
+        right: 7.8%;
+    }
+
     h2
     {
         font-size: 1.5em;
@@ -857,7 +858,7 @@ input, .stat-button
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items:unset;
+        align-items: unset;
     }
 }
 
