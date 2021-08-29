@@ -1,4 +1,4 @@
-# Dark Souls Swing Calculator
+# Swingsouls
 This calculator will determine how many light and heavy one-handed/two-handed attacks you can perform in Dark Souls with the added bonus of letting you know whether you can one-hand or two-hand the weapon. Just input your stats and enable the Ring of Favor and Protection if you have it equipped!
 
 ## Why?
