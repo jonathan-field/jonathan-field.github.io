@@ -824,7 +824,7 @@ a:active { text-decoration: underline; }
 }
 
 /* For devices that have a viewport of 999px-1599px (Computers). */
-@media only screen and (min-width: 999px) and (max-width: 1599px) and (hover: hover)
+@media only screen and (min-width: 999px) and (max-width: 1599px) and (pointer: fine)
 {
     body
     {
@@ -917,7 +917,7 @@ a:active { text-decoration: underline; }
 }
 
 /* If the screen size has a width of 1599px or higher (Zoomed out). */
-@media only screen and (min-width: 1599px)
+@media only screen and (min-width: 1599px) and (pointer: fine)
 {
     body
     {
